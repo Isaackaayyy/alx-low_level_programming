@@ -7,13 +7,11 @@
 
 int main(void)
 {
-	printf("   short int is %ld byte(s) \n", sizeof(short int));
-	printf("         int is %ld byte(s) \n", sizeof(int));
-	printf("       int * is %ld byte(s) \n", sizeof(int *));
-	printf("    long int is %ld byte(s) \n", sizeof(long int));
-	printf("  long int * is %ld byte(s) \n", sizeof(long int *));
-	printf("  signed int is %ld byte(s) \n", sizeof(signed int));
-	printf("unsigned int is %ld byte(s) \n", sizeof(unsigned int));
+	printf("size of a char: %d byte(s) \n", sizeof(char));
+	printf("size of an int: %d byte(s) \n", sizeof(int));
+	printf("size of long int: %d byte(s) \n", sizeof(int *));
+	printf("size of a long long int: %d byte(s) \n", sizeof(long int));
+	printf("size of a float: %d byte(s) \n", sizeof(signed int));
 	return (0);
 }
 
