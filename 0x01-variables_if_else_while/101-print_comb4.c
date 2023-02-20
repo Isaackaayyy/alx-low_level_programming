@@ -22,7 +22,12 @@ int main(void)
 				putchar('n');
 				putchar('o');
 
-
+				if (!(m == '7' && n == '8' && o == '9'))
+				{
+					continue;
+				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
