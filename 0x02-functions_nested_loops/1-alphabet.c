@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - entry point
@@ -8,11 +8,14 @@
  * Rrturn: Always 0
  */
 
-int main(void)
+int print_alphabet(void)
 {
-	char Mystr[] = 1-main.c;
+	int i;
 
-	puts(Mystr);
+	for (i = 'a'; i <= 'z'; i++)
+	{
+		putchar(i);
+	}
 
 	return (0);
 }
