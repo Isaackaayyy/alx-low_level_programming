@@ -10,18 +10,19 @@
 
 int main(void)
 {
-	int w, x, y, z;
+	int a;
+	int b;
+	int c;
+	int d;
 
-	for (w = 0; w < 100; w++)
+	for (a = 0; a <= 9; a++)
 	{
-		for (x = 0; x < 100; x++)
+		for (b = 0; b <= 9; b++)
 		{
-			putchar(w);
-			putchar(x);
 
-			for (y = 0; y < 100; y++)
+			for (c = 0; c <= 9; c++)
 			{
-				for (z = 0; z < 100; z++)
+				for (d = 0; d <= 9; d++)
 				{
 					putchar(y);
 					putchar(z);
