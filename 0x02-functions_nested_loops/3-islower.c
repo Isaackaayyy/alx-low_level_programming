@@ -2,6 +2,7 @@
 
 /**
  * _islower - check for lowercase character
+ *@c: first value
  *
  * Return: on succes 1
  */
