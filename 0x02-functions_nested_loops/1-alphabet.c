@@ -4,7 +4,7 @@
  * print_alphabet - the alphabet, in lowercase
  *
  *
- * Rrturn: void
+ * Return: integer
  */
 
 int print_alphabet(void)
@@ -15,5 +15,5 @@ int print_alphabet(void)
 	{
 		putchar(i);
 	}
-	return(0);
+	return (0);
 }
