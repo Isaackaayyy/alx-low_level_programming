@@ -2,7 +2,6 @@
 
 /**
  * print_alphabet_x10 - print 10 times the alphabet, in lowercase
- * @c: first value
  *
  * Return: void
  */
