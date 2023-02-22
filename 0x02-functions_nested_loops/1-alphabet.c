@@ -1,21 +1,19 @@
 #include "main.h"
 
 /**
- * main - entry point
+ * print_alphabet - the alphabet, in lowercase
  *
- * Description: Write a function that prints the alphabet
  *
- * Rrturn: Always 0
+ * Rrturn: void
  */
 
 int print_alphabet(void)
 {
 	int i;
 
-	for (i = 'a'; i <= 'z'; i++)
+	for (i >= 'a'; i <= 'z'; i++)
 	{
 		putchar(i);
 	}
-
-	return (0);
+	return(0);
 }
