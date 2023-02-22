@@ -3,11 +3,18 @@
 /**
  * _abs - a function that computes the absolute value of an integer
  *
- * @int: first value
+ * @n: first value
  *
  * Return: integer
  */
 
-int _abs(int)
+int _abs(int n)
 {
-	int abs()
+	if (n >= 0)
+	{
+		return (1);
+	}
+	else
+		return (0);
+}
+
