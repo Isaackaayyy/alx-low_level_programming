@@ -17,6 +17,5 @@ int add(int x, int y)
 
 	if (sum < 0)
 		sum = -sum;
-	_putchar('0' + sum);
 	return (sum);
 }
