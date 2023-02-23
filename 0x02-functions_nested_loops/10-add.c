@@ -11,11 +11,5 @@
 
 int add(int x, int y)
 {
-	int sum;
-
-	sum = x + y;
-
-	if (sum < 0)
-		sum = -sum;
-	return (sum);
+	return (x + y);
 }
