@@ -17,5 +17,4 @@ void positive_or_negative(int i)
 	else
 	printf("%d is negative\n", i);
 
-	return (0);
 }
