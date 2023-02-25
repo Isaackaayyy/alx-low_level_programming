@@ -1,6 +1,8 @@
 #include "main.h"
 
 /**
+ *print_line - starting point
+ *
  * print_line: draws a straight line
  *
  * @n: first value
