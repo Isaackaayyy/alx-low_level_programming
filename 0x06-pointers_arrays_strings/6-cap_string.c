@@ -10,58 +10,32 @@
 
 char *cap_string(char *s)
 {
-	int i;
+	int i, c;
+	int trigger;
+	char nots[] = ",;.!?(){}\n\t\" ";
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0, trigger = 0; str[i] != '\0'; i++)
 	{
-		if (i == 0)
+		if (str[0] > 96 && str[0] < 123)
+			trigger = 1;
+		for (c = 0; nots[c] != '\0'; c++)
 		{
-			if (s[i] >= 97 && s[i] <= 122)
-				s[i] = s[i] - 32;
-			continue;
-		}
-		if (s[i] == '.')
-		{
-			i++;
-			if (s[i] >= 97 && s[i] <= 122)
-				s[i] = s[i] - 32;
-			if (s[i] == ' ')
-			{
-				i++;
-				if (s[i] >= 97 && s[i] <= 122)
-					s[i] = s[i] - 32;
-				continue;
-			}
-			continue;
-		}
-		if (s[i] == '.')
-		{
-			i++;
-			if (s[i] >= 97 && s[i] <= 122)
-				s[i] = s[i] - 32;
-			continue;
-		}
-		if (s[i] == ' ')
-		{
-			i++;
-			if (s[i] >= 97 && s[i] <= 122)
-				s[i] = s[i] - 32;
-			continue;
+			if (nots[c] == str[i])
+				trigger = 1;
 		}
 
-		if (s[i] == '	')
+		if (trigger)
 		{
-			i++;
-			if (s[i] >= 97 && s[i] <= 122)
-				s[i] = s[i] - 32;
-			continue;
-		}
-		else
-		{
-			if (s[i] >= 65 && s[i] <= 90)
-				s[i] = s[i] + 32;
-			continue;
+			if (str[i] > 96 && str[i] < 123)
+			{
+				str[i] -= 32;
+				rigger = 0;
+			}
+			else if (str[i] > 64 && str[i] < 91)
+				trigger = 0;
+			else if (str[i] > 47 && str[i] < 58)
+				trigger = 0;
 		}
 	}
-	return (s);
+	return (str);
 }
