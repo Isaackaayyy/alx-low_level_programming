@@ -23,7 +23,12 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if ((argc >= 'a' && argc <= 'z') || (argc >= 'A' && argc <= 'Z'))
+			if (argc >= 'A' && argc <= 'Z')
+			{
+				printf("Error\n");
+				return (1);
+			}
+			if (argc >= 'a' && argc <= 'z')
 			{
 				printf("Error\n");
 				return (1);
