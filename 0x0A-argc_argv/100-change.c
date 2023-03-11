@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * main - Write a program that prints the minimum number of coins
- * to make change for an amount of money
+ * main - Entry point
+ * Description: Calculating change
  * @argc: counter
  * @argv: vector
- * Rerurn: integer
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
@@ -18,14 +18,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (0);
 	}
-
 	cents = atoi(argv[1]);
-
-	if (argc < 0)
-	{
-		printf("0\n");
-		return (1);
-	}
 	while (cents > 0)
 	{
 		coins++;
@@ -49,8 +42,6 @@ int main(int argc, char *argv[])
 			cents -= 2;
 			continue;
 		}
-		if ((cents - 1) >= 0)
-			cents -= 1;
 		cents--;
 	}
 	printf("%d\n", coins);
