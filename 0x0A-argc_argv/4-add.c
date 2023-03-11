@@ -12,7 +12,8 @@
 
 int main(int argc, char *argv[])
 {
-	int i, sum;
+	int i, sum = 0;
+	char *end;
 
 	if (argc == 1)
 	{
@@ -23,17 +24,14 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (argc >= 'A' && argc <= 'Z')
+			strtol(argv[i], &end, 10);
+			if (*end)
 			{
 				printf("Error\n");
 				return (1);
 			}
-			if (argc >= 'a' && argc <= 'z')
-			{
-				printf("Error\n");
-				return (1);
-			}
-			sum = sum + atoi(argv[i]);
+			else if (atoi(argv[i]) > 0)
+				sum = sum + atoi(argv[i]);
 		}
 		printf("%d\n", sum);
 	}
