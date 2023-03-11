@@ -32,21 +32,15 @@ int main(int argc, char *argv[])
 	{
 		coins++;
 		if ((cents - 25) >= 0)
-		{
 			cents -= 25;
-		}
 		if ((cents - 10) >= 0)
-		{
 			cents -= 10;
-		}
 		if ((cents - 5) >= 0)
-		{
 			cents  -= 5;
-		}
 		if ((cents - 2) >= 0)
-		{
 			cents -= 2;
-		}
+		if ((cents - 1) >= 0)
+			cents -= 1;
 		cents--;
 	}
 	printf("%d\n", coins);
