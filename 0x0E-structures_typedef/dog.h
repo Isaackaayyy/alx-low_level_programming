@@ -1,13 +1,10 @@
-#include "main.h"
+#ifndef MAIN
+#define MAIN
 
-/**
- * main - Defining a new type
- * Return: integer
- */
-
-int main(void)
+struct dog
 {
-	typedef char* name;
-	typedef float age;
-	typedef char* owner;
-}
+	char *name;
+	float age;
+	char *owner;
+};
+#endif
