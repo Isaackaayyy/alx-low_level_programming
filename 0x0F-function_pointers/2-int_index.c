@@ -6,11 +6,14 @@
  * @array: array
  * @size: size
  * @cmp: Pointer function
+ * Return: returns the index of the first element for which the cmp function
+ * does not return 0
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int c;
+
 	if (size <= 0)
 		return (-1);
 
