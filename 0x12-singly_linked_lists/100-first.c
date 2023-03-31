@@ -9,8 +9,8 @@ void _print_message(void) __attribute__((constructor));
 
 void _print_message(void)
 {
-	printf("You're beat! and yet, you must allow,\\nI bore my house upon ");
-	printf("my back!\\n\n");
+	printf("You're beat! and yet, you must allow,\nI bore my house upon ");
+	printf("my back!\n");
 }
 
 /**
