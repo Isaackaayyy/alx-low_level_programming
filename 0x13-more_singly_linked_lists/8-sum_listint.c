@@ -3,13 +3,13 @@
 /**
  * sum_listint - sum all value in a linked list
  * @head: Pointer to the first node
-:x
+ * Return: sum of all values of the lis or 0 if the list is empty
  */
 
 int sum_listint(listint_t *head)
 {
 	listint_t *m = head;
-	int n, sum;
+	int n, sum = 0;
 
 	if (m == NULL)
 		return (0);
