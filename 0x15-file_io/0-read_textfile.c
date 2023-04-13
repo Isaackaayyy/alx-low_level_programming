@@ -10,25 +10,23 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	FILE *fptr;
-	char a;
-	size_t r = 0;
+	char a[100];
+	size_t l = 0;
 
 	if (filename == NULL)
-		return (r);
+		return (0);
 
 	fptr = fopen(filename, "r");
-	if (fptr == -1)
-		return (r);
+	if (fptr == NULL)
+		return (0);
 
-	letters = 0;
+	l = fread(a, 1, letters > sizeof(a) ? sizeof(a): letters, fptr);
 
-	while (!feof(fptr))
+	while (letters > 0 && l > 0)
 	{
-		a = fgetc(fptr);
-		printf("%c", a);
-		letters++;
+		fwrite(a, 1, l, stdout);
+		letters -=  l;
 	}
-
 	fclose(fptr);
-	return (letters);
+	return (l);
 }
