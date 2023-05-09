@@ -1,10 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - entry point
- *
- * Description: print all possible combinations of two two-digit numbers
- *
+ * main - print all possible combinations of two two-digit numbers
  * Return: Always 0
  */
 
@@ -17,20 +14,27 @@ int main(void)
 
 	for (a = 0; a <= 9; a++)
 	{
-		for (b = 0; b <= 9; b++)
+		for (b = 0; b <= 8; b++)
 		{
 
 			for (c = 0; c <= 9; c++)
 			{
 				for (d = 0; d <= 9; d++)
 				{
-					putchar(y);
-					putchar(z);
+					putchar(a + '0');
+					putchar(b + '0');
+					putchar(' ');
+					putchar(c + '0');
+					putchar(d + '0');
 
-
+					if (a == 9 && b == 8 && c == 9 && d == 9)
+						break;
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
 	}
+	putchar('\n');
 	return (0);
 }
