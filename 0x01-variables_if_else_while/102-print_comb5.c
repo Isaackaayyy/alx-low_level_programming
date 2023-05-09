@@ -12,12 +12,11 @@ int main(void)
 	int c;
 	int d;
 
-	for (a = 0; a <= 9; a++)
+	for (a = 0; a < 10; a++)
 	{
 		for (b = 0; b <= 8; b++)
 		{
-
-			for (c = a + 1; c <= 9; c++)
+			for (c = 1; c <= 9; c++)
 			{
 				for (d = b + 1; d <= 9; d++)
 				{
