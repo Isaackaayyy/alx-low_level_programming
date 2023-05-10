@@ -17,5 +17,5 @@ int main(void)
 	}
 
 	printf("%d\n", sum);
-	return (SUCCES);
+	return (0);
 }
