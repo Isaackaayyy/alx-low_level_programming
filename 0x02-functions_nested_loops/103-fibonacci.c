@@ -2,7 +2,7 @@
 
 /**
  * main - finds and prints the sum of the even-valued terms
- * 	values must not be more than 4,000,000
+ *	values must not be more than 4,000,000
  * Return: Always 1
  */
 
