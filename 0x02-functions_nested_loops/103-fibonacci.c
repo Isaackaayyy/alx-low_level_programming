@@ -9,21 +9,17 @@
 int main(void)
 {
 	int i;
-	long int f1 = 0, f2 = 1, f3;
+	long int f1 = 0, f2 = 1, f3, sum = 0;
 
-	for (i = 1; i <= 32; i++)
+	for (i = 1; i < 33; i++)
 	{
 		f3 = f1 + f2;
-
-		if (f3 % 2 == 0)
-			printf("%ld", f3);
-
 		f1 = f2;
 		f2 = f3;
 
-		if (i != 32)
-			printf(", ");
+		if ((f3 % 2) == 0)
+			sum += f3;
 	}
-	printf("\n");
+	printf("%ld\n", sum);
 	return (0);
 }
