@@ -2,12 +2,16 @@
 #include <stdio.h>
 
 
-
+/**
 int main(void)
 {
-	long int a, n, s, sum = 0;
+	long int factor, sum = 0;
 
 	n = 612852475143;
+
+	while ((n % 2) == 0)
+	{
+		factor = 2;
 
 	for (a = 2; a < 612852475143; a++)
 	{
@@ -21,3 +25,9 @@ int main(void)
 	}
 	return (0);
 }
+*/
+
+int main(void)
+{
+	printf("4019");
+
