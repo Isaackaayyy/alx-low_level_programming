@@ -29,5 +29,9 @@ int main(void)
 
 int main(void)
 {
-	printf("4019");
+	int n = 4019;
 
+	printf("%d\n", n);
+
+	return (0);
+}
