@@ -2,8 +2,8 @@
 
 
 /**
- * print_dlistint - A function that prints all the elements of a dlistint_t list
- * h: paramter passed
+ * print_dlistint - A function that prints all elements of a dlistint_t list
+ * @h: paramter passed
  * Return: number of nodes
  */
 
