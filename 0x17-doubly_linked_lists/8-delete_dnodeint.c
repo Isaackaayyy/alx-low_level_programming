@@ -32,7 +32,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	{
 		if (crnt_index == index)
 		{
-			if (crnt->next != NULL)
+			if (crnt_node->next != NULL)
 				 crnt_node->next->prev = crnt_node->prev;
 			if (crnt_node->prev != NULL)
 				crnt_node->prev->next = crnt_node->next;
