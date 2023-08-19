@@ -12,7 +12,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 
 	dlistint_t *crnt_node = *head;
-	unsigned int current_index = 0;
+	unsigned int crnt_index = 0;
 
 	if (*head == NULL)
 		return (-1);
